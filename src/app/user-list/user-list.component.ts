@@ -22,6 +22,7 @@ export class UserListComponent implements OnInit {
   // get the user_list from the api; 
   getUserList(){
     this.userService.getUsers().subscribe((data) => {
+      console.log("data", data)
       this.users = data;
     });
   }
