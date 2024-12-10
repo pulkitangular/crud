@@ -1,0 +1,11 @@
+<div *ngIf="user" class="user-details-container">
+  <h3>User Details</h3>
+  <div class="user-info">
+    <p><strong>First Name:</strong> <input [(ngModel)]="user.username" /></p>
+    <p><strong>Last Name:</strong> <input [(ngModel)]="user.name" /></p>
+    <p><strong>Phone:</strong> {{ user.phone }}</p>
+    <p><strong>Email:</strong> {{ user.email }}</p>
+  </div>
+  <button (click)="saveChanges()" class="update-btn">Save</button>
+  <button (click)="cancel()" class="cancel-btn">Cancel</button>
+</div>

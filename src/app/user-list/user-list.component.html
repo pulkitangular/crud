@@ -1,0 +1,10 @@
+<!-- show the list item on UI -->
+<div class="user-list-container">
+  <h2>User List</h2>
+  <ul>
+    <strong><label>User Name</label> <label>Email</label></strong>
+    <li *ngFor="let user of users" (click)="openDetails(user)" class="user-item">
+      <strong>{{ user.username }} {{ user.name }}</strong> ({{ user.email }})
+    </li>
+  </ul>
+</div>
